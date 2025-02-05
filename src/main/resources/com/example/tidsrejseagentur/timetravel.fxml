@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.tidsrejseagentur.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane fx:controller="com.example.tidsrejseagentur.TTController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="caButton" layoutX="17.0" layoutY="30.0" mnemonicParsing="false" onAction="#cabClick" prefHeight="65.0" prefWidth="342.0" text="Customer administration">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="ttmButton" layoutX="17.0" layoutY="130.0" mnemonicParsing="false" onAction="#ttmbClick" prefHeight="65.0" prefWidth="342.0" text="Time Travel Machines">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="tpButton" layoutX="17.0" layoutY="230.0" mnemonicParsing="false" onAction="#tpbClick" prefHeight="65.0" prefWidth="342.0" text="Time Periods">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="bButton" layoutX="17.0" layoutY="330.0" mnemonicParsing="false" onAction="#bbClick" prefHeight="65.0" prefWidth="342.0" text="Booking">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
