@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane fx:controller="com.example.tidsrejseagentur.CustomerAdminController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.CustomerAdminController">
    <children>
       <ListView fx:id="customerListview" layoutX="12.0" layoutY="148.0" prefHeight="238.0" prefWidth="577.0" />
       <TextField fx:id="customerEmail" layoutX="14.0" layoutY="110.0" promptText="E-mail..." />
@@ -18,5 +17,6 @@
       <Button fx:id="addCustomerButton" layoutX="180.0" layoutY="110.0" mnemonicParsing="false" onAction="#addCustomer" prefWidth="100.0" text="Add customer" />
       <Button fx:id="deleteCustomerButton" layoutX="310.0" layoutY="110.0" mnemonicParsing="false" onAction="#deleteCustomer" prefWidth="125.0" text="Delete customer" />
       <Button fx:id="editCustomerButton" layoutX="465.0" layoutY="110.0" mnemonicParsing="false" onAction="#editCustomer" prefWidth="100.0" text="Edit customer" />
+      <Button fx:id="menuButton" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
    </children>
 </AnchorPane>
