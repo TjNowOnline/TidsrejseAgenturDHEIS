@@ -10,6 +10,7 @@ module com.example.tidsrejseagentur {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.example.tidsrejseagentur to javafx.fxml;
     exports com.example.tidsrejseagentur;
