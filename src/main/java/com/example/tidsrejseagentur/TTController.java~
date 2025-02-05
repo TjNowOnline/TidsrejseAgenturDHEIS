@@ -1,0 +1,14 @@
+package com.example.tidsrejseagentur;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class TTController {
+    @FXML
+    private Label welcomeText;
+
+    @FXML
+    protected void onHelloButtonClick() {
+        welcomeText.setText("Welcome to JavaFX Application!");
+    }
+}

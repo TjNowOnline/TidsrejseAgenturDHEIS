@@ -4,9 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.CustomerAdminController">
+<AnchorPane fx:id="customerComboview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.CustomerAdminController">
    <children>
-      <ListView fx:id="customerListview" layoutX="12.0" layoutY="148.0" prefHeight="238.0" prefWidth="577.0" />
       <TextField fx:id="customerEmail" layoutX="14.0" layoutY="110.0" promptText="E-mail..." />
       <TextField fx:id="customerName" layoutX="14.0" layoutY="78.0" promptText="Name..." />
       <Label layoutX="14.0" layoutY="14.0" text="Customer administration">
@@ -18,5 +17,14 @@
       <Button fx:id="deleteCustomerButton" layoutX="310.0" layoutY="110.0" mnemonicParsing="false" onAction="#deleteCustomer" prefWidth="125.0" text="Delete customer" />
       <Button fx:id="editCustomerButton" layoutX="465.0" layoutY="110.0" mnemonicParsing="false" onAction="#editCustomer" prefWidth="100.0" text="Edit customer" />
       <Button fx:id="menuButton" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
+      <TableView layoutX="9.0" layoutY="164.0" prefHeight="200.0" prefWidth="566.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Name" />
+          <TableColumn prefWidth="75.0" text="Email" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
    </children>
 </AnchorPane>
