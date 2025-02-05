@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView layoutX="12.0" layoutY="148.0" prefHeight="238.0" prefWidth="577.0" />
+      <TextField layoutX="14.0" layoutY="110.0" promptText="E-mail..." />
+      <TextField layoutX="14.0" layoutY="78.0" promptText="Name..." />
+      <Label layoutX="14.0" layoutY="14.0" text="Customer administration">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="180.0" layoutY="110.0" mnemonicParsing="false" prefWidth="100.0" text="Add customer" />
+      <Button layoutX="310.0" layoutY="110.0" mnemonicParsing="false" prefWidth="125.0" text="Delete customer" />
+      <Button layoutX="465.0" layoutY="110.0" mnemonicParsing="false" prefWidth="100.0" text="Edit customer" />
+   </children>
+</AnchorPane>
