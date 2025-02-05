@@ -17,7 +17,7 @@
       <Button fx:id="deleteCustomerButton" layoutX="310.0" layoutY="110.0" mnemonicParsing="false" onAction="#deleteCustomer" prefWidth="125.0" text="Delete customer" />
       <Button fx:id="editCustomerButton" layoutX="465.0" layoutY="110.0" mnemonicParsing="false" onAction="#editCustomer" prefWidth="100.0" text="Edit customer" />
       <Button fx:id="menuButton" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
-      <TableView fx:id="customerTable" layoutX="9.0" layoutY="164.0" prefHeight="200.0" prefWidth="566.0">
+      <TableView layoutX="9.0" layoutY="164.0" prefHeight="200.0" prefWidth="566.0">
         <columns>
           <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
           <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />

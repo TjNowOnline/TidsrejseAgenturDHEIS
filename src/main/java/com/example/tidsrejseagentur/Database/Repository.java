@@ -1,13 +1,28 @@
 package com.example.tidsrejseagentur.Database;
 
 import com.example.tidsrejseagentur.Customer;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repository {
-// Create i CRUD. ny kunde kan oprettes
- public void cereateCostumer (Customer costumer){
+
+    public static List<Customer> getAllCustomers() throws SQLException {
+        List<Customer> customers = new ArrayList<>();
+        String query = "SELECT * FROM customers";
+
+        try (Connection conn = Database.getConnection(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(query)) {
+            while (rs.next()) {
+                Customer customer = new Customer(rs.getInt("id"), rs.getString("name"), rs.getString("email"));
+                customers.add(customer);
+            }
+        }
+        return customers;
+    }
+
+    // Create i CRUD. ny kunde kan oprettes
+ public static void cereateCostumer (Customer costumer){
     String sql = "INSERT INTO costumer (name, email) VALUES (?,?)";
 
     try (
@@ -24,7 +39,7 @@ public class Repository {
         e.printStackTrace();
     }
  } // update costumer
- public void updateCostumer (Customer costumer){
+ public static void updateCostumer(Customer costumer){
      String sql = "UPDATE costumer SET name = ?, email = ? WHERE id = ?";
 
      try (
@@ -43,7 +58,7 @@ public class Repository {
          e.printStackTrace();
      }
  }
-    public void deleteCostumer (int id ){
+    public static void deleteCostumer(int id){
      String sql = "DELETE FROM costumer WHERE id = ?";
 
         try (
