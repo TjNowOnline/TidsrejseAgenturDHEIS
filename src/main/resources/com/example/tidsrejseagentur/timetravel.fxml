@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.tidsrejseagentur.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="customerAdminButton" layoutX="25.0" layoutY="30.0" mnemonicParsing="false" onAction="#cabButtonClick" prefHeight="58.0" prefWidth="286.0" text="Customer administration">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="timetravelmachinesButton" layoutX="25.0" layoutY="130.0" mnemonicParsing="false" onAction="#ttmbClick" prefHeight="58.0" prefWidth="286.0" text="Time Travel Machines">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="timeperiodsButton" layoutX="25.0" layoutY="230.0" mnemonicParsing="false" onAction="#tpbClick" prefHeight="58.0" prefWidth="286.0" text="Time Periods">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="bookingButton" layoutX="25.0" layoutY="330.0" mnemonicParsing="false" onAction="#bbClick" prefHeight="58.0" prefWidth="286.0" text="Booking">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
