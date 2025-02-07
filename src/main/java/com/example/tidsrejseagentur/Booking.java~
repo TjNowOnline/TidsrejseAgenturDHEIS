@@ -57,6 +57,6 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "You" + " have booked " + timemachine.getName() + " with " + guide.getName() + " for " + timePeriod.getName();
+        return customer.getName() + " has booked " + timemachine.getName() + " with " + guide.getName() + " for " + timePeriod.getName();
     }
 }

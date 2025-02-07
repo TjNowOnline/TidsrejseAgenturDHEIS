@@ -39,12 +39,15 @@ public class CustomerAdminController {
     public void initialize() {
         nameColumn.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getName()));
         emailColumn.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getEmail()));
+
+        loadCustomers();
     }
 
 
     private void loadCustomers() {
         try {
             List<Customer> customers = Repository.getAllCustomers();
+            System.out.println("Customers: " + customers.size());
             customerList.clear();
             customerList.addAll(customers);
             customerTable.setItems(customerList);

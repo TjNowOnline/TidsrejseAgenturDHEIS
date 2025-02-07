@@ -116,7 +116,7 @@ public class BookingController {
             String status = rs.getString("status");
             machines.add(new Timemachine(id, name, capacity, status));
 
-            System.out.println("Timemachine " + id + ": " + name + ", Capacity: " + capacity + ", Status: " + status);
+            System.out.println();
         }
         return machines;
     }

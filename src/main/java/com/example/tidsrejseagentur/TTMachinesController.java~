@@ -32,11 +32,11 @@ public class TTMachinesController {
     @FXML
     private TableColumn<Timemachine, String> statusColumn;
     @FXML
-    private TextField ttText;
+    private TextField timeMachineName;
     @FXML
-    private TextField capacityText;
+    private TextField timeMachineCapacity;
     @FXML
-    private TextField statusText;
+    private TextField timeMachineStatus;
 
     private ObservableList<Timemachine> timeMachineList = FXCollections.observableArrayList();
 
@@ -61,11 +61,11 @@ public class TTMachinesController {
 
     @FXML
     public void addMachine() {
-        String name = ttText.getText();
-        String status = statusText.getText();
+        String name = timeMachineName.getText();
+        String status = timeMachineStatus.getText();
         int capacity;
         try {
-            capacity = Integer.parseInt(capacityText.getText());
+            capacity = Integer.parseInt(timeMachineCapacity.getText());
         } catch (NumberFormatException e) {
             return; // Handle invalid input for capacity
         }
@@ -97,11 +97,11 @@ public class TTMachinesController {
             return;
         }
 
-        String newName = ttText.getText();
-        String newStatus = statusText.getText();
+        String newName = timeMachineName.getText();
+        String newStatus = timeMachineStatus.getText();
         int newCapacity;
         try {
-            newCapacity = Integer.parseInt(capacityText.getText());
+            newCapacity = Integer.parseInt(timeMachineCapacity.getText());
         } catch (NumberFormatException e) {
             return; // Handle invalid input for capacity
         }
